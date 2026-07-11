@@ -205,6 +205,7 @@ M.Sc. Mathematics & Computing
 IIT (ISM) Dhanbad
 
 📧 Connect with me on LinkedIn!
+**LinkedIn:** https://www.linkedin.com/in/arijit-bhattacharyya/
 
 ---
 
