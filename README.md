@@ -1,89 +1,204 @@
-# Movie Recommendation System
+# 🎬 Movie Recommendation System
 
-A Content-Based Movie Recommendation System built using Python, Pandas, and Scikit-Learn. It recommends movies similar to a given movie by analyzing genres, cast, crew, keywords, and movie overview using Natural Language Processing (NLP).
-
----
-
-## Project Overview
-
-This recommendation system uses content-based filtering instead of user ratings. It compares movie features such as genres, actors, directors, keywords, and plot summaries to find similar movies.
-
-Movie information is converted into numerical vectors using CountVectorizer, and similarity between movies is computed using Cosine Similarity.
+An end-to-end **Content-Based Movie Recommendation System** built using **Python**, **Machine Learning**, and **Streamlit**. The application recommends movies similar to a user's selected movie by analyzing movie metadata such as genres, keywords, cast, crew, and overview.
 
 ---
 
-## Features
+## 🚀 Live Demo
 
-- Data preprocessing and cleaning
-- Feature extraction from multiple columns
-- Text vectorization using CountVectorizer
-- Cosine similarity computation
-- Movie recommendation function
-- Model serialization using Pickle
+> **Coming Soon** (Will be deployed on Streamlit Cloud)
 
 ---
 
-## Technologies Used
+## 📌 Project Overview
 
+This project demonstrates how a **Content-Based Recommendation System** works using Natural Language Processing (NLP) techniques and cosine similarity.
+
+Given a movie selected by the user, the application recommends five similar movies along with their posters fetched from the **TMDB API**.
+
+---
+
+## ✨ Features
+
+- 🎥 Recommend top 5 similar movies
+- 🖼️ Display movie posters using TMDB API
+- ⚡ Fast recommendations using precomputed similarity matrix
+- 🌐 Interactive Streamlit web application
+- 📚 Clean and user-friendly interface
+
+---
+
+## 🛠️ Tech Stack
+
+### Programming Language
 - Python
+
+### Libraries
 - Pandas
 - NumPy
 - Scikit-learn
-- Pickle
+- NLTK
+- Requests
+- Streamlit
+
+### Machine Learning
+- Count Vectorizer
+- Cosine Similarity
+- NLP-based Feature Engineering
+
+### Dataset
+- TMDB 5000 Movies Dataset
 
 ---
 
-## Dataset
+## 📂 Project Structure
 
-This project uses the TMDB 5000 Movie Dataset.
-
-Files used:
-- tmdb_5000_movies.csv
-- tmdb_5000_credits.csv
-
----
-
-## Project Workflow
-
-1. Load the movie and credits datasets.
-2. Merge both datasets.
-3. Select the required features.
-4. Clean and preprocess the text data.
-5. Create a combined `tags` column.
-6. Convert the text into vectors using CountVectorizer.
-7. Compute cosine similarity.
-8. Recommend the top similar movies.
+```text
+Movie-Recommendation-System/
+│
+├── 📄 app.py                                # Streamlit web application
+├── 📓 Movie-recommendation-system.ipynb     # Data preprocessing and model building
+├── 📦 movies.pkl                            # Processed movie dataset
+├── 📄 requirements.txt                      # Project dependencies
+├── 📖 README.md                             # Project documentation
+├── 📜 LICENSE                               # MIT License
+└── 🚫 .gitignore                            # Files ignored by Git
+```
+```
 
 ---
 
-## How to Run
+## ⚙️ Installation
 
-1. Clone this repository.
-2. Install the required libraries using:
+Clone the repository
 
-   `pip install -r requirements.txt`
+```bash
+git clone https://github.com/your-username/Movie-Recommendation-System.git
+```
 
-3. Download the TMDB 5000 Movie Dataset.
-4. Open the Jupyter Notebook.
-5. Run all the cells.
+Navigate to the project directory
+
+```bash
+cd Movie-Recommendation-System
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application
+
+```bash
+streamlit run app.py
+```
 
 ---
 
-## Sample Recommendation
+## ⚠️ Note
 
-Example:
+The file **`similarity.pkl`** is **not included** in this repository because it exceeds GitHub's file size limit.
 
-recommend("Avatar")
+To generate it:
 
-Output:
+1. Open `Movie_Recommendation_System.ipynb`
+2. Run all the notebook cells.
+3. This will generate:
 
-- Avatar
-- John Carter
-- Guardians of the Galaxy
-- Star Trek
-- The Avengers
+```
+movies.pkl
+similarity.pkl
+```
+
+After generating the files, run
+
+```bash
+streamlit run app.py
+```
 
 ---
 
+## 🧠 Machine Learning Workflow
 
+- Data Collection
+- Data Cleaning
+- Feature Engineering
+- Text Preprocessing
+- Stemming
+- Count Vectorization
+- Cosine Similarity
+- Recommendation Generation
+- Streamlit Deployment
 
+---
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+<p align="center">
+  <img src="images/home_page.png" width="900">
+</p>
+
+---
+
+### 🎥 Movie Recommendation
+
+<p align="center">
+  <img src="images/recommendation_results.png" width="900">
+</p>
+
+---
+
+## 📈 Future Improvements
+
+- Hybrid Recommendation System
+- Collaborative Filtering
+- User Authentication
+- Personalized Recommendations
+- Movie Search with Auto-complete
+- Genre-wise Filtering
+- Trending Movies Section
+- Deploy on AWS/Render
+
+---
+
+## 📚 Concepts Used
+
+- Content-Based Recommendation
+- Natural Language Processing (NLP)
+- Feature Extraction
+- Cosine Similarity
+- Vector Space Model
+- API Integration
+- Pickle Serialization
+- Streamlit Deployment
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+If you have suggestions or improvements, feel free to fork the repository and create a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Arijit Bhattacharyya**
+
+M.Sc. Mathematics & Computing  
+IIT (ISM) Dhanbad
+
+📧 Connect with me on LinkedIn!
+
+---
+
+⭐ If you found this project useful, don't forget to **Star** this repository!
